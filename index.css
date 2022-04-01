@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+* {
+	font-family: 'Poppins', sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  padding-top: .3rem;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-container {
+  font-family: "Poppins";
+  background-color: #001d4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.logo {
+  color: #001d4a;
+  font-weight: 700;
+
+}
+.profile-title {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding-top: 2.5rem;
+  width: 80%;
+}
+.form-top  {
+  margin-bottom: 0px;
+  font-weight: 600;
+
+}
+
+.form-top > .form-name {
+  color: #001d4a;
+  text-align: left;
+  font-size: 2.5rem;
+	line-height: 5px;
+}
+.form-top > p {
+  color: #27476e;
+  font-size: 1rem;
+}
+
+.passwords {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ .password-input {
+	width: 45%;
+}
+.confirm-input {
+	width: 45%;
+} 
+.button {
+  height: 4rem;
+  border: none;
+  width: 23.2rem;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #c0ff02;
+  color: #001d4a;
+  font-size: 1.2rem;
+}
+.button:hover { 
+	box-shadow: 0px 1px 0.5px grey;
+	opacity: 0.9;
+	transition: ease-in-out;
+}
+.footer {
+	margin: auto;
+	font-size: 12px;
+	max-width: 70%;
+	padding-top: 40px;
+
+}
+.footer >  .footer-text{
+	text-align: center;
+	line-height: 15px;
+	color: 	#999999;
+}
+
+ .footer >  .footer-text > span > a{
+	color: 	#999999;
+
+ }
+.right {
+  width: 65%;
+}
+
+/** BEGIN: Non Openmrs CSS **/
+
+:root {
+  --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+  --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+  --omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+  --omrs-color-interaction: #1e4bd1;
+  --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+  --omrs-color-danger: #b50706;
+  --omrs-color-bg-low-contrast: #eff1f2;
+  --omrs-color-ink-high-contrast: #121212;
+  --omrs-color-bg-high-contrast: #ffffff;
+}
+/** END: Non Openmrs CSS **/
+div.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Input*/
+.input-filled > input {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 2rem;
+  color: #001d4a;
+  font-size: 1rem;
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.input-filled > input:focus {
+  outline: none;
+}
+
+.input-filled > .input-label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.875rem;
+  line-height: 147.6%;
+  color: grey;
+  transition: top 0.2s;
+}
+
+.input-filled > i {
+  position: absolute;
+  top: 0.8375rem;
+  padding: 12px 12px;
+right: 10px;
+}
+
+.input-filled > img{
+	position: absolute;
+	top: 1rem;
+	width: 18px;
+	right: 10px;
+	opacity: 0.2;
+}
+
+
+.input-filled > input:focus + .input-label,
+.input-filled > input:valid + .input-label {
+  top: 0;
+  font-size: 0.9375rem;
+  margin-bottom: 32px;
+  font-size: .8rem;
+}
+
+
+
+/* .omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+.input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+  fill: var(--omrs-color-ink-high-contrast);
+} */
+
+/** DISABLED **/
+
+
+
+.input-filled > input {
+  background: var(--omrs-color-bg-low-contrast);
+}
